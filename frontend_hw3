@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<form id="demo">
+		1st Number:
+		<input id="Number1" type="text"  name="num1"><br>
+		2st Number:
+		<input id="Number2" type="text"  name="num2"><br>
+		<button type="button"
+	onclick="multiply()">Multiply </button>
+	<button type="button"
+	onclick="division()">Divide </button>
+
+	<br>
+	<br>
+	The Result Is : <br>
+	<output id="result"></output>
+	
+
+
+	</form>
+	
+	<script>
+             let m;
+		function multiply() {
+			var numone=document.getElementById('Number1').value;
+			var numtwo=document.getElementById('Number2').value;
+			 m=parseInt(numone) * parseInt(numtwo);
+			 document.getElementById("result").innerHTML=m;
+			
+
+		}
+
+		function division() {
+			var numone=document.getElementById('Number1').value;
+			var numtwo=document.getElementById('Number2').value;
+			 m=parseInt(numone) / parseInt(numtwo);
+			 document.getElementById("result").innerHTML=m;
+			
+
+		}
+	</script>
+</body>
+</html>
